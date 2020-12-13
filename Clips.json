@@ -1,0 +1,148 @@
+{
+  "clips": [
+    {
+      "content": "$AUTHOR_NAME",
+      "name": "User Signature",
+      "trigger": "usersig"
+    },
+    {
+      "name": "Group Name",
+      "children": [
+        {
+          "content": "console.log(${:message})",
+          "name": "Console Log",
+          "scope": "editor",
+          "shortcut": "cmd-alt-shift-l",
+          "syntax": "jsx",
+          "trigger": "log"
+        },
+        {
+          "content": "import ${2:moduleName} from '${1:module}'$0",
+          "name": "import",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "imp"
+        },
+        {
+          "content": "import '${1:module}'$0",
+          "name": "import no module name",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "imn"
+        },
+        {
+          "content": "import { $2 } from '${1:module}'$0",
+          "name": "import destructuring",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "imd"
+        },
+        {
+          "content": "import * as ${2:alias} from '${1:module}'$0",
+          "name": "import everything",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "ime"
+        },
+        {
+          "content": "import { ${2:originalName} as ${3:alias} } from '${1:module}'$0",
+          "name": "import as",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "ima"
+        },
+        {
+          "content": "export default $1$0",
+          "name": "export default",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "exp"
+        },
+        {
+          "content": "export { $2 } from '${1:module}'$0",
+          "name": "export destucturing",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "exd"
+        },
+        {
+          "content": "export { ${2:originalName} as ${3:alias} } from '${1:module}'$0",
+          "name": "export as",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "exa"
+        },
+        {
+          "content": "export const ${1:functionName} = (${2:params}) => { \n\t {$0} \n }\n",
+          "name": "export named function",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "enf"
+        },
+        {
+          "content": "export default (${1:params}) => { \n\t$0\n}\n",
+          "name": "export default function",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "edf"
+        },
+        {
+          "content": "${1:methodName} = (${2:params}) => {\n\t${0}\n}\n",
+          "name": "method",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "met"
+        },
+        {
+          "content": "get ${1:propertyName}() {\n\treturn this.${0}\n}\n",
+          "name": "property get",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "pge"
+        },
+        {
+          "content": "set ${1:propertyName}(${2:value}) {\n\t${0}\n}\n",
+          "name": "property set",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "pse"
+        },
+        {
+          "content": "${1:array}.forEach(${2:currentItem} => {\n\t${0}\n})\n",
+          "name": "for each",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "fre"
+        },
+        {
+          "content": "for(let ${1:item} of ${2:object}) {\n\t${0}\n}\n",
+          "name": "for of",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "fof"
+        },
+        {
+          "content": "for(let ${1:item} in ${2:object}) {\n\t${0}\n}\n",
+          "name": "for in",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "fin"
+        },
+        {
+          "content": "(${1:params}) => {\n\t${2}\n}\n",
+          "name": "anonymous function",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "afn"
+        },
+        {
+          "content": "const ${1:name} = (${2:params}) => {\n\t${3}\n}\n",
+          "name": "named function",
+          "scope": "editor",
+          "syntax": "jsx",
+          "trigger": "nfn"
+        }
+      ]
+    }
+  ]
+}
