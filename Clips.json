@@ -429,210 +429,210 @@
           "trigger": "rce"
         },
         {
-          "content": "import React from 'react'function ${1:${TM_FILENAME_BASE}}() {\treturn (\t\t<div>\t\t\t$0\t\t</div>\t)}export default ${1:${TM_FILENAME_BASE}}",
+          "content": "import React from 'react'\nfunction ${1:${TM_FILENAME_BASE}}() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}\n\nexport default ${1:${TM_FILENAME_BASE}}",
           "name": "reactFunctionalExportComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rfce"
         },
         {
-          "content": "import React from 'react'export default function ${1:${TM_FILENAME_BASE}}() {\treturn (\t\t<div>\t\t\t$0\t\t</div>\t)}",
+          "content": "import React from 'react'\nexport default function ${1:${TM_FILENAME_BASE}}() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}",
           "name": "reactFunctionalComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rfc"
         },
         {
-          "content": "import React from 'react'import PropTypes from 'prop-types'function ${1:${TM_FILENAME_BASE}}(props) {\treturn (\t\t<div>\t\t\t$0\t\t</div>\t)}${1:${TM_FILENAME_BASE}}.propTypes = {}export default ${1:${TM_FILENAME_BASE}}",
+          "content": "import React from 'react'\nimport PropTypes from 'prop-types'\n\nfunction ${1:${TM_FILENAME_BASE}(props) {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}\n\n${1:${TM_FILENAME_BASE}.propTypes = {}\n\nexport default ${1:${TM_FILENAME_BASE}",
           "name": "reactFunctionalComponentWithPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rfcp"
         },
         {
-          "content": "import React from 'react'const ${1:${TM_FILENAME_BASE}} = () => {\treturn (\t\t<div>\t\t\t$0\t\t</div>\t)}export default ${1:${TM_FILENAME_BASE}}",
+          "content": "import React from 'react'\nconst ${1:TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}\n\nexport default ${1:TM_FILENAME_BASE}",
           "name": "reactArrowFunctionExportComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rafce"
         },
         {
-          "content": "import React from 'react'export const ${1:${TM_FILENAME_BASE}} = () => {\treturn (\t\t<div>\t\t\t$0\t\t</div>\t)}",
+          "content": "import React from 'react'\nexport const ${1:$TM_FILENAME_BASE} = () => {\n\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}",
           "name": "reactArrowFunctionComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rafc"
         },
         {
-          "content": "import React from 'react'import PropTypes from 'prop-types'const ${1:${TM_FILENAME_BASE}} = props => {\treturn (\t\t<div>\t\t\t$0\t\t</div>\t)}${1:${TM_FILENAME_BASE}}.propTypes = {}export default ${1:${TM_FILENAME_BASE}}",
+          "content": "import React from 'react'\nimport PropTypes from 'prop-types'\nconst ${1:$TM_FILENAME_BASE} = props => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}\n${1:$TM_FILENAME_BASE}.propTypes = {}\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactArrowFunctionComponentWithPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rafcp"
         },
         {
-          "content": "import React\n { Component } from 'react'import PropTypes from 'prop-types'export class ${1:${TM_FILENAME_BASE}} extends Component {\tstatic propTypes = {\t}\trender() {\t\treturn (\t\t\t<div>\t\t\t\t$0\t\t\t</div>\t\t)\t}}export default ${1:${TM_FILENAME_BASE}}",
+          "content": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\n\nexport class ${1:$TM_FILENAME_BASE} extends Component {\n\tstatic propTypes = {\t}\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}}\n\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactClassExportComponentWithPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rcep"
         },
         {
-          "content": "import React\n { PureComponent } from 'react'export default class ${1:${TM_FILENAME_BASE}} extends PureComponent {\trender() {\t\treturn (\t\t\t<div>\t\t\t\t$0\t\t\t</div>\t\t)\t}}",
+          "content": "import React, { PureComponent } from 'react'\nexport default class ${1:$TM_FILENAME_BASE} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}}",
           "name": "reactClassPureComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rpc"
         },
         {
-          "content": "import React\n { PureComponent } from 'react'export class ${1:${TM_FILENAME_BASE}} extends PureComponent {\trender() {\t\treturn (\t\t\t<div>\t\t\t\t$0\t\t\t</div>\t\t)\t}}export default ${1:$TM_FILENAME_BASE}",
+          "content": "import React, { PureComponent } from 'react'\nexport class ${1:$TM_FILENAME_BASE} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}}\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactClassExportPureComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rpce"
         },
         {
-          "content": "import React\n { PureComponent } from 'react'import PropTypes from 'prop-types'export default class ${1:${TM_FILENAME_BASE}} extends PureComponent {\tstatic propTypes = {\t}\trender() {\t\treturn (\t\t\t<div>\t\t\t\t$0\t\t\t</div>\t\t)\t}}",
+          "content": "import React, { PureComponent } from 'react'\nimport PropTypes from 'prop-types'\nexport default class ${1:$TM_FILENAME_BASE} extends PureComponent {\n\tstatic propTypes = {\t}\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}}",
           "name": "reactClassPureComponentWithPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rpcp"
         },
         {
-          "content": "import React\n { memo } from 'react'export default memo(function ${1:${TM_FILENAME_BASE}}() {\treturn (\t\t<div>\t\t\t$0\t\t</div>\t)})",
+          "content": "import React, { memo } from 'react'\nexport default memo(function ${1:$TM_FILENAME_BASE}() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n})",
           "name": "reactFunctionMemoComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rmc"
         },
         {
-          "content": "import React\n { memo } from 'react'import PropTypes from 'prop-types'const ${1:${TM_FILENAME_BASE}} = memo(function ${1:${TM_FILENAME_BASE}}(props) {\treturn (\t\t<div>\t\t\t$0\t\t</div>\t)})${1:${TM_FILENAME_BASE}}.propTypes = {}export default ${1:${TM_FILENAME_BASE}}",
+          "content": "import React, { memo } from 'react'\nimport PropTypes from 'prop-types'\nconst ${1:$TM_FILENAME_BASE} = memo(function ${1:$TM_FILENAME_BASE}(props) {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n})\n${1:$TM_FILENAME_BASE}.propTypes = {}\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactFunctionMemoComponentWithPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rmcp"
         },
         {
-          "content": "import React\n { Component } from 'react'import PropTypes from 'prop-types'export default class ${1:${TM_FILENAME_BASE}} extends Component {\tstatic propTypes = {\t\t${2:prop}: ${3:PropTypes}\t}\trender() {\t\treturn (\t\t\t<div>\t\t\t\t$0\t\t\t</div>\t\t)\t}}",
+          "content": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\nexport default class ${1:$TM_FILENAME_BASE} extends Component {\n\tstatic propTypes = {\n\t\t${2:prop}: ${3:PropTypes}\n\t}\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}}",
           "name": "reactClassCompomentPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rccp"
         },
         {
-          "content": "import React\n { Component } from 'react'import { connect } from 'react-redux'export class ${1:${TM_FILENAME_BASE}} extends Component {\trender() {\t\treturn (\t\t\t<div>\t\t\t\t$0\t\t\t</div>\t\t)\t}}const mapStateToProps = (state) => ({\t})const mapDispatchToProps = {\t}export default connect(mapStateToProps\n mapDispatchToProps)(${1:${TM_FILENAME_BASE}})",
+          "content": "import React, { Component } from 'react'\nimport { connect } from 'react-redux'\nexport class ${1:$TM_FILENAME_BASE} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}}\nconst mapStateToProps = (state) => ({\n\t})\nconst mapDispatchToProps = {\n\t}\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE})",
           "name": "reactClassCompomentRedux",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rcredux"
         },
         {
-          "content": "import React\n { Component } from 'react'import PropTypes from 'prop-types'import { connect } from 'react-redux'export class ${1:${TM_FILENAME_BASE}} extends Component {\tstatic propTypes = {\t\t${2:prop}: ${3:PropTypes}\t}\trender() {\t\treturn (\t\t\t<div>\t\t\t\t$0\t\t\t</div>\t\t)\t}}const mapStateToProps = (state) => ({\t})const mapDispatchToProps = {\t}export default connect(mapStateToProps\n mapDispatchToProps)(${1:${TM_FILENAME_BASE}})",
+          "content": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\nimport { connect } from 'react-redux'\nexport class ${1:$TM_FILENAME_BASE} extends Component {\n\tstatic propTypes = {\n\t\t${2:prop}: ${3:PropTypes}\n\t}\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}}\nconst mapStateToProps = (state) => (\n{\t}\n)\nconst mapDispatchToProps = {\n\t}\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE})",
           "name": "reactClassCompomentReduxPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rcreduxp"
         },
         {
-          "content": "import React\n { Component } from 'react'import { connect } from 'react-redux'export const ${1:${TM_FILENAME_BASE}} = () => {\treturn (\t\t<div>\t\t\t$0\t\t</div>\t)}const mapStateToProps = (state) => ({\t})const mapDispatchToProps = {\t}export default connect(mapStateToProps\n mapDispatchToProps)(${1:${TM_FILENAME_BASE}})",
+          "content": "import React, { Component } from 'react'\nimport { connect } from 'react-redux'\nexport const ${1:$TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}\nconst mapStateToProps = (state) => ({\n\t\n})\nconst mapDispatchToProps = {\n\t\n}\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE})",
           "name": "reactFunctionalCompomentRedux",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rfcredux"
         },
         {
-          "content": "import React\n { Component } from 'react'import PropTypes from 'prop-types'import { connect } from 'react-redux'export const ${1:${TM_FILENAME_BASE}} = () => {\treturn (\t\t<div>\t\t\t$0\t\t</div>\t)}${1:${TM_FILENAME_BASE}}.propTypes = {\t${2:prop}: ${3:PropTypes}}const mapStateToProps = (state) => ({\t})const mapDispatchToProps = {\t}export default connect(mapStateToProps\n mapDispatchToProps)(${1:${TM_FILENAME_BASE}})",
+          "content": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\nimport { connect } from 'react-redux'\nexport const ${1:$TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}\n${1:$TM_FILENAME_BASE}.propTypes = {\n\t${2:prop}: ${3:PropTypes}\n}\nconst mapStateToProps = (state) => ({\n\t\n})\nconst mapDispatchToProps = {\n\t\n}\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE})",
           "name": "reactFunctionalCompomentReduxPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rfcreduxp"
         },
         {
-          "content": "const mapStateToProps = (state) => ({\t${1}})const mapDispatchToProps = {\t}",
+          "content": "const mapStateToProps = (state) => ({\n\t${1}\n})\nconst mapDispatchToProps = {\t}",
           "name": "mappingToProps",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "reduxmap"
         },
         {
-          "content": "constructor(props) {\tsuper(props)\tthis.state = {\t\t $0\t}}",
+          "content": "constructor(props) {\n\tsuper(props)\n\tthis.state = {\n\t\t $0\n\t}}",
           "name": "classConstructor",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rconst"
         },
         {
-          "content": "state = {\t$1}",
+          "content": "state = {\n\t$1\n}",
           "name": "emptyState",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "est"
         },
         {
-          "content": "componentWillMount() {\t$0}",
+          "content": "componentWillMount() {\n\t$0\n}",
           "name": "componentWillMount",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "cwm"
         },
         {
-          "content": "componentDidMount() {\t$0}",
+          "content": "componentDidMount() {\n\t$0\n}",
           "name": "componentDidMount",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "cdm"
         },
         {
-          "content": "componentWillReceiveProps(nextProps) {\t$0}",
+          "content": "componentWillReceiveProps(nextProps) {\n\t$0\n}",
           "name": "componentWillReceiveProps",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "cwr"
         },
         {
-          "content": "shouldComponentUpdate(nextProps\n nextState) {\t$0}",
+          "content": "shouldComponentUpdate(nextProps, nextState) {\n\t$0\n}",
           "name": "shouldComponentUpdate",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "scu"
         },
         {
-          "content": "componentWillUpdate(nextProps\n nextState) {\t$0}",
+          "content": "componentWillUpdate(nextProps, nextState) {\n\t$0\n}",
           "name": "componentWillUpdate",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "cwup"
         },
         {
-          "content": "componentDidUpdate(prevProps\n prevState) {\t$0}",
+          "content": "componentDidUpdate(prevProps, prevState) {\n\t$0\n}",
           "name": "componentDidUpdate",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "cdup"
         },
         {
-          "content": "componentWillUnmount() {\t$0}",
+          "content": "componentWillUnmount() {\n\t$0\n}",
           "name": "componentWillUnmount",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "cwun"
         },
         {
-          "content": "static getDerivedStateFromProps(props\n state) {\t${1}}",
+          "content": "static getDerivedStateFromProps(props, state) {\n\t${1}\n}",
           "name": "getDerivedStateFromProps",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "gdsfp"
         },
         {
-          "content": "getSnapshotBeforeUpdate = (prevProps\n prevState) => {\t$0}",
+          "content": "getSnapshotBeforeUpdate = (prevProps, prevState) => {\n\t$0\n}",
           "name": "getSnapshotBeforeUpdate",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "gsbu"
         },
         {
-          "content": "render() {\treturn (\t\t<div>\t\t\t$0\t\t</div>\t)}",
+          "content": "render() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}",
           "name": "componentRender",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -667,7 +667,7 @@
           "trigger": "sst"
         },
         {
-          "content": "this.setState((state\n props) => { return { $0 }})",
+          "content": "this.setState((state, props) => {\n return {$0}\n})",
           "name": "componentSetStateFunc",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -695,7 +695,7 @@
           "trigger": "bnd"
         },
         {
-          "content": "export const ${1:actionName} = (payload) => ({\ttype: ${3:type}\n\tpayload})",
+          "content": "export const ${1:actionName} = (payload) => ({\n\ttype: ${3:type},\n\tpayload\n})",
           "name": "reduxAction",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -709,14 +709,14 @@
           "trigger": "rxconst"
         },
         {
-          "content": "const initialState = {}export default (state = initialState\n { type\n payload }) => {\tswitch (type) {\tcase ${1:typeName}:\t\treturn { ...state\n ...payload }\tdefault:\t\treturn state\t}}",
+          "content": "const initialState = {}\nexport default (\nstate = initialState, { type, payload }) => {\n\tswitch (type) {\n\tcase ${1:typeName}:\n\t\treturn { ...state, ...payload }\n\tdefault:\n\t\treturn state\n\t}}",
           "name": "reduxReducer",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rxreducer"
         },
         {
-          "content": "import { createSelector } from 'reselect'export const ${1:selectorName} = state => state.${2:selector}",
+          "content": "import { createSelector } from 'reselect'\nexport const ${1:selectorName} = state => state.${2:selector}",
           "name": "reduxSelector",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
