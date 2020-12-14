@@ -723,77 +723,77 @@
           "trigger": "rxselect"
         },
         {
-          "content": "import { createSlice } from '@reduxjs/toolkit'const initialState = {}const ${1:${TM_FILENAME_BASE}} = createSlice({\tname: ${2:sliceName}\n\tinitialState\n\treducers: {\t\t}});export const {} = ${1:${TM_FILENAME_BASE}}.actionsexport default ${1:${TM_FILENAME_BASE}}.reducer",
+          "content": "import { createSlice } from '@reduxjs/toolkit'\nconst initialState = {}\nconst ${1:$TM_FILENAME_BASE} = createSlice({\n\tname: ${2:sliceName},\n\tinitialState,\n\treducers: {\n\n\t\t}});\nexport const {} = ${1:$TM_FILENAME_BASE}.actions\nexport default ${1:$TM_FILENAME_BASE}.reducer",
           "name": "reduxSlice",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rxslice"
         },
         {
-          "content": "import React\n { Component } from 'react'import { Text\n View } from 'react-native'export default class ${1:${TM_FILENAME_BASE}} extends Component {\trender() {\t\treturn (\t\t\t<View>\t\t\t\t<Text> ${2:textInComponent} </Text>\t\t\t</View>\t\t)\t}}",
+          "content": "import React, { Component } from 'react'\nimport { Text, View } from 'react-native'\nexport default class ${1:$TM_FILENAME_BASE} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}}",
           "name": "reactNativeComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rnc"
         },
         {
-          "content": "import React\n { Component } from 'react'import { Text\n StyleSheet\n View } from 'react-native'export default class ${1:${TM_FILENAME_BASE}} extends Component {\trender() {\t\treturn (\t\t\t<View>\t\t\t\t<Text> ${2:textInComponent} </Text>\t\t\t</View>\t\t)\t}}const styles = StyleSheet.create({})",
+          "content": "import React, { Component } from 'react'\nimport { Text, StyleSheet, View } from 'react-native'\nexport default class ${1:$TM_FILENAME_BASE} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}}\nconst styles = StyleSheet.create({})",
           "name": "reactNativeComponentWithStyles",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rncs"
         },
         {
-          "content": "import React\n { Component } from 'react'import { Text\n View } from 'react-native'export class ${1:${TM_FILENAME_BASE}} extends Component {\trender() {\t\treturn (\t\t\t<View>\t\t\t\t<Text> ${2:textInComponent} </Text>\t\t\t</View>\t\t)\t}}export default ${1:${TM_FILENAME_BASE}}",
+          "content": "import React, { Component } from 'react'\nimport { Text, View } from 'react-native'\nexport class ${1:$TM_FILENAME_BASE} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}}\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactNativeComponentExport",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rnce"
         },
         {
-          "content": "import React\n { PureComponent } from 'react'import { Text\n View } from 'react-native'export default class ${1:${TM_FILENAME_BASE}} extends PureComponent {\trender() {\t\treturn (\t\t\t<View>\t\t\t\t<Text> ${2:textInComponent} </Text>\t\t\t</View>\t\t)\t}}",
+          "content": "import React, { PureComponent } from 'react'\nimport { Text, View } from 'react-native'\nexport default class ${1:$TM_FILENAME_BASE} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}}",
           "name": "reactNativePureComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rnpc"
         },
         {
-          "content": "import React\n { PureComponent } from 'react'import { Text\n View } from 'react-native'export class ${1:${TM_FILENAME_BASE}} extends PureComponent {\trender() {\t\treturn (\t\t\t<View>\t\t\t\t<Text> ${2:textInComponent} </Text>\t\t\t</View>\t\t)\t}}export default ${1:${TM_FILENAME_BASE}}",
+          "content": "import React, { PureComponent } from 'react'\nimport { Text, View } from 'react-native'\nexport class ${1:$TM_FILENAME_BASE} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}}\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactNativePureComponentExport",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rnpce"
         },
         {
-          "content": "import React\n { Component } from 'react'import { View\n Text } from 'react-native'import PropTypes from 'prop-types'import { connect } from 'react-redux'export class ${1:${TM_FILENAME_BASE}} extends Component {\tstatic propTypes = {\t\t${2:prop}: ${3:PropTypes}\t}\trender() {\t\treturn (\t\t\t<View>\t\t\t\t<Text> ${2:textInComponent} </Text>\t\t\t</View>\t\t)\t}}const mapStateToProps = (state) => ({\t})const mapDispatchToProps = {\t}export default connect(mapStateToProps\n mapDispatchToProps)(${1:${TM_FILENAME_BASE}})",
+          "content": "import React, { Component } from 'react'\nimport { View, Text } from 'react-native'\nimport PropTypes from 'prop-types'\nimport { connect } from 'react-redux'\nexport class ${1:$TM_FILENAME_BASE} extends Component {\n\tstatic propTypes = {\n\t\t${2:prop}: ${3:PropTypes}\n\t}\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}}\nconst mapStateToProps = (state) => ({\n\t})\nconst mapDispatchToProps = {\t}\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE})",
           "name": "reactNativeClassComponentRedux",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rncredux"
         },
         {
-          "content": "import React from 'react'import { View\n Text } from 'react-native'const ${1:${TM_FILENAME_BASE}} = () => {\treturn (\t\t<View>\t\t\t<Text>$0</Text>\t\t</View>\t)}export default ${1:${TM_FILENAME_BASE}}",
+          "content": "import React from 'react'\nimport { View, Text } from 'react-native'\nconst ${1:$TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$0</Text>\n\t\t</View>\n\t)}\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactNativeFunctionalExportComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rnfe"
         },
         {
-          "content": "import React from 'react'import { StyleSheet\n Text\n View } from 'react-native'const ${1:${TM_FILENAME_BASE}} = () => {\treturn (\t\t<View>\t\t\t<Text>$0</Text>\t\t</View>\t)}export default ${1:${TM_FILENAME_BASE}}const styles = StyleSheet.create({})",
+          "content": "import React from 'react'\nimport { StyleSheet, Text, View } from 'react-native'\nconst ${1:$TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$0</Text>\n\t\t</View>\n\t)}\nexport default ${1:$TM_FILENAME_BASE}\nconst styles = StyleSheet.create({})",
           "name": "reactNativeFunctionalExportComponentWithStyles",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rnfes"
         },
         {
-          "content": "import React from 'react'import { View\n Text } from 'react-native'export default function ${1:${TM_FILENAME_BASE}}() {\treturn (\t\t<View>\t\t\t<Text>$0</Text>\t\t</View>\t)}",
+          "content": "import React from 'react'\nimport { View, Text } from 'react-native'\nexport default function ${1:$TM_FILENAME_BASE}}() {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$0</Text>\n\t\t</View>\n\t)}",
           "name": "reactNativeFunctionalComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rnf"
         },
         {
-          "content": "import React from 'react'import { StyleSheet\n Text\n View } from 'react-native'export default function ${1:${TM_FILENAME_BASE}}() {\treturn (\t\t<View>\t\t\t<Text>$0</Text>\t\t</View>\t)}const styles = StyleSheet.create({})",
+          "content": "import React from 'react'\nimport { StyleSheet, Text, View } from 'react-native'\nexport default function ${1:$TM_FILENAME_BASE}() {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$0</Text>\n\t\t</View>\n\t)}\nconst styles = StyleSheet.create({})",
           "name": "reactNativeFunctionalComponentWithStyles",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -807,217 +807,217 @@
           "trigger": "imrn"
         },
         {
-          "content": "const styles = StyleSheet.create({\t${1:style}})",
+          "content": "const styles = StyleSheet.create({\n\t$1:style\n})",
           "name": "reactNativeStyles",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rnstyle"
         },
         {
-          "content": "PropTypes.array\n",
+          "content": "PropTypes.array,",
           "name": "propTypeArray",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "pta"
         },
         {
-          "content": "PropTypes.array.isRequired\n",
+          "content": "PropTypes.array.isRequired,",
           "name": "propTypeArrayRequired",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptar"
         },
         {
-          "content": "PropTypes.bool\n",
+          "content": "PropTypes.bool,",
           "name": "propTypeBool",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptb"
         },
         {
-          "content": "PropTypes.bool.isRequired\n",
+          "content": "PropTypes.bool.isRequired,",
           "name": "propTypeBoolRequired",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptbr"
         },
         {
-          "content": "PropTypes.func\n",
+          "content": "PropTypes.func,",
           "name": "propTypeFunc",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptf"
         },
         {
-          "content": "PropTypes.func.isRequired\n",
+          "content": "PropTypes.func.isRequired,",
           "name": "propTypeFuncRequired",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptfr"
         },
         {
-          "content": "PropTypes.number\n",
+          "content": "PropTypes.number,",
           "name": "propTypeNumber",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptn"
         },
         {
-          "content": "PropTypes.number.isRequired\n",
+          "content": "PropTypes.number.isRequired,",
           "name": "propTypeNumberRequired",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptnr"
         },
         {
-          "content": "PropTypes.object\n",
+          "content": "PropTypes.object,",
           "name": "propTypeObject",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "pto"
         },
         {
-          "content": "PropTypes.object.isRequired\n",
+          "content": "PropTypes.object.isRequired,",
           "name": "propTypeObjectRequired",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptor"
         },
         {
-          "content": "PropTypes.string\n",
+          "content": "PropTypes.string,",
           "name": "propTypeString",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "pts"
         },
         {
-          "content": "PropTypes.string.isRequired\n",
+          "content": "PropTypes.string.isRequired,",
           "name": "propTypeStringRequired",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptsr"
         },
         {
-          "content": "PropTypes.node\n",
+          "content": "PropTypes.node,",
           "name": "propTypeNode",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptnd"
         },
         {
-          "content": "PropTypes.node.isRequired\n",
+          "content": "PropTypes.node.isRequired,",
           "name": "propTypeNodeRequired",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptndr"
         },
         {
-          "content": "PropTypes.element\n",
+          "content": "PropTypes.element,",
           "name": "propTypeElement",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptel"
         },
         {
-          "content": "PropTypes.element.isRequired\n",
+          "content": "PropTypes.element.isRequired,",
           "name": "propTypeElementRequired",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptelr"
         },
         {
-          "content": "PropTypes.instanceOf($0)\n",
+          "content": "PropTypes.instanceOf($0),",
           "name": "propTypeInstanceOf",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "pti"
         },
         {
-          "content": "PropTypes.instanceOf($0).isRequired\n",
+          "content": "PropTypes.instanceOf($0).isRequired,",
           "name": "propTypeInstanceOfRequired",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptir"
         },
         {
-          "content": "PropTypes.oneOf(['$0'])\n",
+          "content": "PropTypes.oneOf(['$0']),",
           "name": "propTypeEnum",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "pte"
         },
         {
-          "content": "PropTypes.oneOf(['$0']).isRequired\n",
+          "content": "PropTypes.oneOf(['$0']).isRequired,",
           "name": "propTypeEnumRequired",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "pter"
         },
         {
-          "content": "PropTypes.oneOfType([\t$0])\n",
+          "content": "PropTypes.oneOfType([\n\t$0\n]),",
           "name": "propTypeOneOfType",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptet"
         },
         {
-          "content": "PropTypes.oneOfType([\t$0]).isRequired\n",
+          "content": "PropTypes.oneOfType([\n\t$0\n]).isRequired,",
           "name": "propTypeOneOfTypeRequired",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptetr"
         },
         {
-          "content": "PropTypes.arrayOf($0)\n",
+          "content": "PropTypes.arrayOf($0),",
           "name": "propTypeArrayOf",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptao"
         },
         {
-          "content": "PropTypes.arrayOf($0).isRequired\n",
+          "content": "PropTypes.arrayOf($0).isRequired,",
           "name": "propTypeArrayOfRequired",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptaor"
         },
         {
-          "content": "PropTypes.objectOf($0)\n",
+          "content": "PropTypes.objectOf($0),",
           "name": "propTypeObjectOf",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptoo"
         },
         {
-          "content": "PropTypes.objectOf($0).isRequired\n",
+          "content": "PropTypes.objectOf($0).isRequired,",
           "name": "propTypeObjectOfRequired",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptoor"
         },
         {
-          "content": "PropTypes.shape({\t$0})\n",
+          "content": "PropTypes.shape({\n\t$0\n}),",
           "name": "propTypeShape",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptsh"
         },
         {
-          "content": "PropTypes.shape({\t$0}).isRequired\n",
+          "content": "PropTypes.shape({\n\t$0\n}).isRequired,",
           "name": "propTypeShapeRequired",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptshr"
         },
         {
-          "content": "PropTypes.exact({\t$0})\n",
+          "content": "PropTypes.exact({\n\t$0\n}),",
           "name": "propTypeExact",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptex"
         },
         {
-          "content": "PropTypes.exact({\t$0}).isRequired\n",
+          "content": "PropTypes.exact({\n\t$0\n}).isRequired,",
           "name": "propTypeExactRequired",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -1031,119 +1031,119 @@
           "trigger": "ptypes"
         },
         {
-          "content": "PropTypes.any\n",
+          "content": "PropTypes.any,",
           "name": "propTypeAny",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptany"
         },
         {
-          "content": "/** * ${0} */",
+          "content": "/**\n * ${0}\n */",
           "name": "Comment Big Block",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "cmmb"
         },
         {
-          "content": "describe('$1'\n () => {\t$0})",
+          "content": "describe('$1', () => {\n\t$0\n})",
           "name": "describeBlock",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "desc"
         },
         {
-          "content": "test('should $1'\n () => {\t$0})",
+          "content": "test('should $1', () => {\n\t$0\n})",
           "name": "testBlock",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "test"
         },
         {
-          "content": "test('should $1'\n async () => {\t$0})",
+          "content": "test('should $1', async () => {\n\t$0\n})",
           "name": "testAsyncBlock",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "testa"
         },
         {
-          "content": "it('should $1'\n () => {\t$0})",
+          "content": "it('should $1', () => {\n\t$0\n})",
           "name": "itBlock",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "tit"
         },
         {
-          "content": "it('should $1'\n async () => {\t$0})",
+          "content": "it('should $1', async () => {\n\t$0\n})",
           "name": "itAsyncBlock",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "tita"
         },
         {
-          "content": "import React from 'react'import renderer from 'react-test-renderer'import { ${1:${TM_FILENAME_BASE}} } from '../${1:${TM_FILENAME_BASE}}'describe('<${1:${TM_FILENAME_BASE}} />'\n () => {\tconst defaultProps = {}\tconst wrapper = renderer.create(<${1:${TM_FILENAME_BASE}} {...defaultProps} />)\ttest('render'\n () => {\t\texpect(wrapper).toMatchSnapshot()\t})})",
+          "content": "import React from 'react'\nimport renderer from 'react-test-renderer'\nimport { ${1:$TM_FILENAME_BASE} } from '../${1:$TM_FILENAME_BASE}'\n\ndescribe('<${1:$TM_FILENAME_BASE} />', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(<${1:$TM_FILENAME_BASE} {...defaultProps} />)\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t}\n)})",
           "name": "setupReactTest",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "stest"
         },
         {
-          "content": "import 'react-native'import React from 'react'import renderer from 'react-test-renderer'import ${1:${TM_FILENAME_BASE}} from '../${1:${TM_FILENAME_BASE}}'describe('<${1:${TM_FILENAME_BASE}} />'\n () => {\tconst defaultProps = {}\tconst wrapper = renderer.create(<${1:${TM_FILENAME_BASE}} {...defaultProps} />)\ttest('render'\n () => {\t\texpect(wrapper).toMatchSnapshot()\t})})",
+          "content": "import 'react-native'\nimport React from 'react'\nimport renderer from 'react-test-renderer'\nimport ${1:${TM_FILENAME_BASE} from '../${1:${TM_FILENAME_BASE}'\n\ndescribe('<${1:${TM_FILENAME_BASE} />', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(<${1:$TM_FILENAME_BASE} {...defaultProps} />)\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t}\n)})",
           "name": "setupReactNativeTest",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "sntest"
         },
         {
-          "content": "import React from 'react'import renderer from 'react-test-renderer'import { Provider } from 'react-redux'import store from 'src/store'import { ${1:${TM_FILENAME_BASE}} } from '../${1:${TM_FILENAME_BASE}}'describe('<${1:${TM_FILENAME_BASE}} />'\n () => {\tconst defaultProps = {}\tconst wrapper = renderer.create(\t\t<Provider store={store}>\t\t <${1:${TM_FILENAME_BASE}} {...defaultProps} />\t\t</Provider>\n\t)\ttest('render'\n () => {\t\texpect(wrapper).toMatchSnapshot()\t})})",
+          "content": "import React from 'react'\nimport renderer from 'react-test-renderer'\nimport { Provider } from 'react-redux'\nimport store from 'src/store'\nimport { ${1:$TM_FILENAME_BASE} } from '../${1:$TM_FILENAME_BASE}'\ndescribe('<${1:$TM_FILENAME_BASE} />', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(\n\t\t<Provider store={store}>\n\t\t <${1:$TM_FILENAME_BASE} {...defaultProps} />\n\t\t</Provider>,\t)\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t}\n)})",
           "name": "setupReactComponentTestWithRedux",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "srtest"
         },
         {
-          "content": "import 'react-native'import React from 'react'import renderer from 'react-test-renderer'import { Provider } from 'react-redux'import store from 'src/store'import ${1:${TM_FILENAME_BASE}} from '../${1:${TM_FILENAME_BASE}}'describe('<${1:${TM_FILENAME_BASE}} />'\n () => {\tconst defaultProps = {}\tconst wrapper = renderer.create(\t\t<Provider store={store}>\t\t\t<${1:${TM_FILENAME_BASE}} {...defaultProps} />\t\t</Provider>\n\t)\ttest('render'\n () => {\t\texpect(wrapper).toMatchSnapshot()\t})})",
+          "content": "import 'react-native'\nimport React from 'react'\nimport renderer from 'react-test-renderer'\nimport { Provider } from 'react-redux'\nimport store from 'src/store'\nimport { ${1:$TM_FILENAME_BASE} } from '../${1:$TM_FILENAME_BASE}'\ndescribe('<${1:$TM_FILENAME_BASE} />', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(\n\t\t<Provider store={store}>\n\t\t\t <${1:$TM_FILENAME_BASE} {...defaultProps} />\n\t\t</Provider>,\n\t)\n\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t}\n)})",
           "name": "setupReactNativeTestWithRedux",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "snrtest"
         },
         {
-          "content": "import { compose\n graphql } from 'react-apollo'",
+          "content": "import { compose, graphql } from 'react-apollo'",
           "name": "graphQLForComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "graphql"
         },
         {
-          "content": "export default compose(\tgraphql(${1:queryOrMutation}\n { name: ${2:name} })\n)(${1:${TM_FILENAME_BASE}})",
+          "content": "export default compose(\n\tgraphql(${1:queryOrMutation}, { name: ${2:name} }),\n)(${1:$TM_FILENAME_BASE})",
           "name": "exportGraphQL",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "expgql"
         },
         {
-          "content": "import React from 'react'import PropTypes from 'prop-types'import { connect } from 'react-redux'export const mapStateToProps = state => ({})export const mapDispatchToProps = { }export const ${1:hocComponentName} = (WrappedComponent) => {\tconst hocComponent = ({ ...props }) => <WrappedComponent {...props} />\thocComponent.propTypes = {\t}\treturn hocComponent}export default WrapperComponent => connect(mapStateToProps\n mapDispatchToProps)(${1:hocComponentName}(WrapperComponent))",
+          "content": "import React from 'react'\nimport PropTypes from 'prop-types'\nimport { connect } from 'react-redux'\n\nexport const mapStateToProps = state => ({\n\n})\n\nexport const mapDispatchToProps = {\n\n}\n\nexport const ${1:hocComponentName} = (WrappedComponent) => {\n\tconst hocComponent = ({ ...props }) => <WrappedComponent {...props} />\n\n\thocComponent.propTypes = {\n\t}\n\n\treturn hocComponent\n}\n\nexport default WrapperComponent => connect(mapStateToProps, mapDispatchToProps)(${1:hocComponentName}(WrapperComponent))",
           "name": "hocComponentWithRedux",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "hocredux"
         },
         {
-          "content": "import React from 'react'import PropTypes from 'prop-types'export default (WrappedComponent) => {\tconst hocComponent = ({ ...props }) => <WrappedComponent {...props} />\thocComponent.propTypes = {\t}\treturn hocComponent}",
+          "content": "import React from 'react'\nimport PropTypes from 'prop-types'\n\nexport default (WrappedComponent) => {\n\tconst hocComponent = ({ ...props }) => <WrappedComponent {...props} />\n\n\thocComponent.propTypes = {\n\t}\n\n\treturn hocComponent\n}",
           "name": "hocComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "hoc"
         },
         {
-          "content": "const [${1:state}\n set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialState})",
+          "content": "const [${1:state}, set${1/(.*)/${1:}] = useState(${2:initialState})",
           "name": "useState",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "useState"
         },
         {
-          "content": "useEffect(() => {\t${1:effect}\treturn () => {\t\t${2:cleanup}\t}}\n [${3:input}])",
+          "content": "useEffect(() => {\t${1:effect}\n\treturn () => {\n\t\t${2:cleanup}\n\t}\n}, [${3:input}])",
           "name": "useEffect",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -1157,21 +1157,21 @@
           "trigger": "useContext"
         },
         {
-          "content": "const [state\n dispatch] = useReducer(${1:reducer}\n ${2:initialState}\n ${3:init})",
+          "content": "const [state, dispatch] = useReducer(${1:reducer}, ${2:initialState}, ${3:init})",
           "name": "useReducer",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "useReducer"
         },
         {
-          "content": "useCallback(\t() => {\t\t${1:callback}\t}\n\t[${2:input}]\n)",
+          "content": "useCallback(\n\t() => {\n\t\t${1:callback}\n\t},\n\t[${2:input}],\n)",
           "name": "useCallback",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "useCallback"
         },
         {
-          "content": "useMemo(() => ${1:function}\n ${2:input})",
+          "content": "useMemo(() => ${1:function}, ${2:input})",
           "name": "useMemo",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -1185,7 +1185,7 @@
           "trigger": "useRef"
         },
         {
-          "content": "useImperativeHandle(\t${1:ref}\n\t() => {\t\t${2:handler}\t}\n\t[${3:input}]\n)",
+          "content": "useImperativeHandle(\n\t${1:ref},\n\t() => {\n\t\t${2:handler}\n\t},\n\t[${3:input}],\n)",
           "name": "useImperativeHandle",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -1199,7 +1199,7 @@
           "trigger": "useDebugValue"
         },
         {
-          "content": "useLayoutEffect(() => {\t${1:effect}\treturn () => {\t\t${2:cleanup}\t};}\n [${3:input}])",
+          "content": "useLayoutEffect(() => {\n\t${1:effect}\n\treturn () => {\n\t\t${2:cleanup}\n\t};\n}, [${3:input}])",
           "name": "useLayoutEffect",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
