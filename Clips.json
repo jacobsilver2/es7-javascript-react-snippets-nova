@@ -44,7 +44,7 @@
           "trigger": "ima"
         },
         {
-          "content": "export default $1$0",
+          "content": "export default $0",
           "name": "exportDefault",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -65,14 +65,14 @@
           "trigger": "exa"
         },
         {
-          "content": "export const ${1:functionName} = (${2:params}) => {\n\t$0\n}",
+          "content": "export const ${1:functionName} = (${2:params}) => {\n\t$0\n};",
           "name": "exportNamedFunction",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "enf"
         },
         {
-          "content": "export default (${1:params}) => {\t$0}",
+          "content": "export default function ${1:functionName}(${1:params}) => {\n\t$0\n};",
           "name": "exportDefaultFunction",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -86,14 +86,14 @@
           "trigger": "met"
         },
         {
-          "content": "get ${1:propertyName}() {\n\treturn this.${0}\n}",
+          "content": "get ${1:propertyName}() {\n\treturn this.${0};\n}",
           "name": "propertyGet",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "pge"
         },
         {
-          "content": "set ${1:propertyName}(${2:value}) {\n\t${0}\n}",
+          "content": "set ${1:propertyName}(${2:value}) {\n\t${0};\n}",
           "name": "propertySet",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -114,7 +114,7 @@
           "trigger": "fof"
         },
         {
-          "content": "for(let ${1:item} in ${2:object}) {\n\t${0}\n}",
+          "content": "for(const ${1:item} in ${2:object}) {\n\t${0}\n}",
           "name": "forIn",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -287,141 +287,141 @@
       "name": "React",
       "children": [
         {
-          "content": "import React from 'react'",
+          "content": "import React from 'react'\n",
           "name": "import React",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imr"
         },
         {
-          "content": "import ReactDOM from 'react-dom'",
+          "content": "import ReactDOM from 'react-dom'\n",
           "name": "import ReactDOM",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imrd"
         },
         {
-          "content": "import React, { Component } from 'react'",
+          "content": "import React, { Component } from 'react'\n",
           "name": "import React, { Component }",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imrc"
         },
         {
-          "content": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'",
+          "content": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\n",
           "name": "import React, { Component } & PropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imrcp"
         },
         {
-          "content": "import React, { PureComponent } from 'react'",
+          "content": "import React, { PureComponent } from 'react'\n",
           "name": "import React, { PureComponent }",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imrpc"
         },
         {
-          "content": "import React, { PureComponent } from 'react'\nimport PropTypes from 'prop-types'",
+          "content": "import React, { PureComponent } from 'react'\nimport PropTypes from 'prop-types'\n",
           "name": "import React, { PureComponent } & PropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imrpcp"
         },
         {
-          "content": "import React, { memo } from 'react'",
+          "content": "import React, { memo } from 'react'\n",
           "name": "import React, { memo }",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imrm"
         },
         {
-          "content": "import React, { memo } from 'react'\nimport PropTypes from 'prop-types'",
+          "content": "import React, { memo } from 'react'\nimport PropTypes from 'prop-types'\n",
           "name": "import React, { memo } & PropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imrmp"
         },
         {
-          "content": "import React, { useState } from 'react'",
+          "content": "import React, { useState } from 'react'\n",
           "name": "import React, {useState}",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imrs"
         },
         {
-          "content": "import React, { useState, useEffect } from 'react'",
+          "content": "import React, { useState, useEffect } from 'react'\n",
           "name": "import React, {useState, useEffect}",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imrse"
         },
         {
-          "content": "import PropTypes from 'prop-types'",
+          "content": "import PropTypes from 'prop-types'\n",
           "name": "import PropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "impt"
         },
         {
-          "content": "import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'",
+          "content": "import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'\n",
           "name": "import React Router",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imrr"
         },
         {
-          "content": "import { BrowserRouter as Router } from 'react-router-dom'",
+          "content": "import { BrowserRouter as Router } from 'react-router-dom'\n",
           "name": "import React Browser Router",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imbr"
         },
         {
-          "content": "import { Route } from 'react-router-dom'",
+          "content": "import { Route } from 'react-router-dom'\n",
           "name": "import React Browser Router - Route",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imbrr"
         },
         {
-          "content": "import { Route, Switch, NavLink, Link } from 'react-router-dom'",
+          "content": "import { Route, Switch, NavLink, Link } from 'react-router-dom'\n",
           "name": "import React Browser Router - Route Combo",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imbrc"
         },
         {
-          "content": "import { Switch } from 'react-router-dom'",
+          "content": "import { Switch } from 'react-router-dom'\n",
           "name": "import React Browser Router - Switch",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imbrs"
         },
         {
-          "content": "import { Link } from 'react-router-dom'",
+          "content": "import { Link } from 'react-router-dom'\n",
           "name": "import React Browser Router - Link",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imbrl"
         },
         {
-          "content": "import { NavLink } from 'react-router-dom'",
+          "content": "import { NavLink } from 'react-router-dom'\n",
           "name": "import React Browser Router - NavLink",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "imbrnl"
         },
         {
-          "content": "import { connect } from 'react-redux'",
+          "content": "import { connect } from 'react-redux'\n",
           "name": "import redux statement",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "redux"
         },
-       
+
         {
-          "content": "constructor(props) {\n\tsuper(props)\n\tthis.state = {\n\t\t $0\n\t}}",
+          "content": "constructor(props) {\n\tsuper(props)\n\n\tthis.state = {\n\t\t $0\n\t}}",
           "name": "classConstructor",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -498,7 +498,7 @@
           "trigger": "gsbu"
         },
         {
-          "content": "render() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}",
+          "content": "render() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}",
           "name": "componentRender",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -519,7 +519,7 @@
           "trigger": "cref"
         },
         {
-          "content": "const ref = React.createRef()",
+          "content": "const ref = React.createRef()\n",
           "name": "forwardRef",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -533,7 +533,7 @@
           "trigger": "sst"
         },
         {
-          "content": "this.setState((state, props) => {\n return {$0}\n})",
+          "content": "this.setState((state, props) => { return { $0 }})",
           "name": "componentSetStateFunc",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -580,14 +580,14 @@
           "trigger": "rxconst"
         },
         {
-          "content": "const initialState = {}\nexport default (\nstate = initialState, { type, payload }) => {\n\tswitch (type) {\n\tcase ${1:typeName}:\n\t\treturn { ...state, ...payload }\n\tdefault:\n\t\treturn state\n\t}}",
+          "content": "const initialState = {\n\n}\n\nexport default (state = initialState, { type, payload }) => {\n\tswitch (type) {\n\n\tcase ${1:typeName}:\n\t\treturn { ...state, ...payload }\n\n\tdefault:\n\t\treturn state\n\t}\n}",
           "name": "reduxReducer",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rxreducer"
         },
         {
-          "content": "import { createSelector } from 'reselect'\nexport const ${1:selectorName} = state => state.${2:selector}",
+          "content": "import { createSelector } from 'reselect'\n\nexport const ${1:selectorName} = state => state.${2:selector}",
           "name": "reduxSelector",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -599,96 +599,96 @@
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rxslice"
-        },
+        }
       ]
     },
     {
       "name": "React Native",
       "children": [
-      {
-        "content": "import { ${1:moduleName} } from 'react-native'",
-        "name": "reactNativeImport",
-        "scope": "editor",
-        "syntax": ["jsx", "javascript"],
-        "trigger": "imrn"
-      },
-      {
-        "content": "const styles = StyleSheet.create({\n\t$1:style\n})",
-        "name": "reactNativeStyles",
-        "scope": "editor",
-        "syntax": ["jsx", "javascript"],
-        "trigger": "rnstyle"
-      }
-    ]
+        {
+          "content": "import { ${1:moduleName} } from 'react-native'",
+          "name": "reactNativeImport",
+          "scope": "editor",
+          "syntax": ["jsx", "javascript"],
+          "trigger": "imrn"
+        },
+        {
+          "content": "const styles = StyleSheet.create({\n\t${1:style}\n})",
+          "name": "reactNativeStyles",
+          "scope": "editor",
+          "syntax": ["jsx", "javascript"],
+          "trigger": "rnstyle"
+        }
+      ]
     },
     {
       "name": "React Native Components",
       "children": [
         {
-          "content": "import React, { Component } from 'react'\nimport { Text, View } from 'react-native'\nexport default class ${1:$TM_FILENAME_BASE} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}}",
+          "content": "import React, { Component } from 'react'\nimport { Text, View } from 'react-native'\n\nexport default class ${1:$TM_FILENAME_BASE} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}\n}",
           "name": "reactNativeComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rnc"
         },
         {
-          "content": "import React, { Component } from 'react'\nimport { Text, StyleSheet, View } from 'react-native'\nexport default class ${1:$TM_FILENAME_BASE} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}}\nconst styles = StyleSheet.create({})",
+          "content": "import React, { Component } from 'react'\nimport { Text, StyleSheet, View } from 'react-native'\n\nexport default class ${1:$TM_FILENAME_BASE} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}\n}\n\nconst styles = StyleSheet.create({})",
           "name": "reactNativeComponentWithStyles",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rncs"
         },
         {
-          "content": "import React, { Component } from 'react'\nimport { Text, View } from 'react-native'\nexport class ${1:$TM_FILENAME_BASE} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}}\nexport default ${1:$TM_FILENAME_BASE}",
+          "content": "import React, { Component } from 'react'\nimport { Text, View } from 'react-native'\n\nexport class ${1:$TM_FILENAME_BASE} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}\n}\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactNativeComponentExport",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rnce"
         },
         {
-          "content": "import React, { PureComponent } from 'react'\nimport { Text, View } from 'react-native'\nexport default class ${1:$TM_FILENAME_BASE} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}}",
+          "content": "import React, { PureComponent } from 'react'\nimport { Text, View } from 'react-native'\n\nexport default class ${1:$TM_FILENAME_BASE} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}\n}",
           "name": "reactNativePureComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rnpc"
         },
         {
-          "content": "import React, { PureComponent } from 'react'\nimport { Text, View } from 'react-native'\nexport class ${1:$TM_FILENAME_BASE} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}}\nexport default ${1:$TM_FILENAME_BASE}",
+          "content": "import React, { PureComponent } from 'react'\nimport { Text, View } from 'react-native'\n\nexport class ${1:$TM_FILENAME_BASE} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}\n}\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactNativePureComponentExport",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rnpce"
         },
         {
-          "content": "import React, { Component } from 'react'\nimport { View, Text } from 'react-native'\nimport PropTypes from 'prop-types'\nimport { connect } from 'react-redux'\nexport class ${1:$TM_FILENAME_BASE} extends Component {\n\tstatic propTypes = {\n\t\t${2:prop}: ${3:PropTypes}\n\t}\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}}\nconst mapStateToProps = (state) => ({\n\t})\nconst mapDispatchToProps = {\t}\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE})",
+          "content": "import React, { Component } from 'react'\nimport { View, Text } from 'react-native'\n\nimport PropTypes from 'prop-types'\nimport { connect } from 'react-redux'\n\nexport class ${1:$TM_FILENAME_BASE} extends Component {\n\tstatic propTypes = {\n\t\t${2:prop}: ${3:PropTypes}\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}}\n\nconst mapStateToProps = (state) => ({\n\n\t})\n\nconst mapDispatchToProps = {\n\t\n}\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE})",
           "name": "reactNativeClassComponentRedux",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rncredux"
         },
         {
-          "content": "import React from 'react'\nimport { View, Text } from 'react-native'\nconst ${1:$TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$0</Text>\n\t\t</View>\n\t)}\nexport default ${1:$TM_FILENAME_BASE}",
+          "content": "import React from 'react'\nimport { View, Text } from 'react-native'\n\nconst ${1:$TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$0</Text>\n\t\t</View>\n\t)\n}\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactNativeFunctionalExportComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rnfe"
         },
         {
-          "content": "import React from 'react'\nimport { StyleSheet, Text, View } from 'react-native'\nconst ${1:$TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$0</Text>\n\t\t</View>\n\t)}\nexport default ${1:$TM_FILENAME_BASE}\nconst styles = StyleSheet.create({})",
+          "content": "import React from 'react'\nimport { StyleSheet, Text, View } from 'react-native'\n\nconst ${1:$TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$0</Text>\n\t\t</View>\n\t)\n}\n\nexport default ${1:$TM_FILENAME_BASE}\nconst styles = StyleSheet.create({})",
           "name": "reactNativeFunctionalExportComponentWithStyles",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rnfes"
         },
         {
-          "content": "import React from 'react'\nimport { View, Text } from 'react-native'\nexport default function ${1:$TM_FILENAME_BASE}}() {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$0</Text>\n\t\t</View>\n\t)}",
+          "content": "import React from 'react'\nimport { View, Text } from 'react-native'\n\nexport default function ${1:$TM_FILENAME_BASE}}() {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$0</Text>\n\t\t</View>\n\t)\n}",
           "name": "reactNativeFunctionalComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rnf"
         },
         {
-          "content": "import React from 'react'\nimport { StyleSheet, Text, View } from 'react-native'\nexport default function ${1:$TM_FILENAME_BASE}() {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$0</Text>\n\t\t</View>\n\t)}\nconst styles = StyleSheet.create({})",
+          "content": "import React from 'react'\nimport { StyleSheet, Text, View } from 'react-native'\n\nexport default function ${1:$TM_FILENAME_BASE}() {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$0</Text>\n\t\t</View>\n\t)\n}\n\nconst styles = StyleSheet.create({})",
           "name": "reactNativeFunctionalComponentWithStyles",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -922,8 +922,8 @@
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "ptany"
-        },
-      ],
+        }
+      ]
     },
     {
       "name": "Others",
@@ -978,7 +978,7 @@
           "trigger": "tpf"
         },
         {
-          "content": "import React from 'react'\nimport renderer from 'react-test-renderer'\nimport { ${1:$TM_FILENAME_BASE} } from '../${1:$TM_FILENAME_BASE}'\n\ndescribe('<${1:$TM_FILENAME_BASE} />', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(<${1:$TM_FILENAME_BASE} {...defaultProps} />)\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t}\n)})",
+          "content": "import React from 'react'\nimport renderer from 'react-test-renderer'\n\nimport { ${1:$TM_FILENAME_BASE} } from '../${1:$TM_FILENAME_BASE}'\n\ndescribe('<${1:$TM_FILENAME_BASE} />', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(<${1:$TM_FILENAME_BASE} {...defaultProps} />)\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t}\n)})",
           "name": "setupReactTest",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -992,14 +992,14 @@
           "trigger": "sntest"
         },
         {
-          "content": "import React from 'react'\nimport renderer from 'react-test-renderer'\nimport { Provider } from 'react-redux'\nimport store from 'src/store'\nimport { ${1:$TM_FILENAME_BASE} } from '../${1:$TM_FILENAME_BASE}'\ndescribe('<${1:$TM_FILENAME_BASE} />', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(\n\t\t<Provider store={store}>\n\t\t <${1:$TM_FILENAME_BASE} {...defaultProps} />\n\t\t</Provider>,\t)\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t}\n)})",
+          "content": "import React from 'react'\nimport renderer from 'react-test-renderer'\nimport { Provider } from 'react-redux'\nimport store from 'src/store'\nimport { ${1:$TM_FILENAME_BASE} } from '../${1:$TM_FILENAME_BASE}'\ndescribe('<${1:$TM_FILENAME_BASE} />', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(\n\t\t<Provider store={store}>\n\t\t <${1:$TM_FILENAME_BASE} {...defaultProps} />\n\n\t\t</Provider>,\t)\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t})\n})",
           "name": "setupReactComponentTestWithRedux",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "srtest"
         },
         {
-          "content": "import 'react-native'\nimport React from 'react'\nimport renderer from 'react-test-renderer'\nimport { Provider } from 'react-redux'\nimport store from 'src/store'\nimport { ${1:$TM_FILENAME_BASE} } from '../${1:$TM_FILENAME_BASE}'\ndescribe('<${1:$TM_FILENAME_BASE} />', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(\n\t\t<Provider store={store}>\n\t\t\t <${1:$TM_FILENAME_BASE} {...defaultProps} />\n\t\t</Provider>,\n\t)\n\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t}\n)})",
+          "content": "import 'react-native'\nimport React from 'react'\nimport renderer from 'react-test-renderer'\nimport { Provider } from 'react-redux'\n\nimport store from 'src/store'\nimport { ${1:$TM_FILENAME_BASE} } from '../${1:$TM_FILENAME_BASE}'\n\ndescribe('<${1:$TM_FILENAME_BASE} />', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(\n\t\t<Provider store={store}>\n\t\t\t <${1:$TM_FILENAME_BASE} {...defaultProps} />\n\t\t</Provider>,\n\t)\n\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t})\n})",
           "name": "setupReactNativeTestWithRedux",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -1018,8 +1018,8 @@
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "hoc"
-        },
-      ],
+        }
+      ]
     },
     {
       "name": "React Hooks",
@@ -1032,7 +1032,7 @@
           "trigger": "useState"
         },
         {
-          "content": "useEffect(() => {\t${1:effect}\n\treturn () => {\n\t\t${2:cleanup}\n\t}\n}, [${3:input}])",
+          "content": "useEffect(() => {\n\t${1:effect}\n\treturn () => {\n\t\t${2:cleanup}\n\t}\n}, [${3:input}])",
           "name": "useEffect",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -1107,14 +1107,14 @@
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "useDispatch"
-        },
-      ],
+        }
+      ]
     },
     {
       "name": "GraphQL",
       "children": [
         {
-          "content": "import { compose, graphql } from 'react-apollo'",
+          "content": "import { compose, graphql } from 'react-apollo'\n",
           "name": "graphQLForComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
@@ -1133,146 +1133,146 @@
       "name": "React Components",
       "children": [
         {
-          "content": "import React, { Component } from 'react'\nexport default class ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t\n$0\t\t\t</div>\n\t\t)\n\t}}",
+          "content": "import React, { Component } from 'react'\n\nexport default class ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t\n$0\t\t\t</div>\n\t\t)\n\t}\n}",
           "name": "reactClassCompoment",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rcc"
         },
         {
-          "content": "import React, { Component } from 'react'\nexport class ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}}\nexport default ${1:${TM_FILENAME_BASE}}",
+          "content": "import React, { Component } from 'react'\n\nexport class ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nexport default ${1:${TM_FILENAME_BASE}",
           "name": "reactClassExportComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rce"
         },
         {
-          "content": "import React from 'react'\nfunction ${1:${TM_FILENAME_BASE}}() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}\n\nexport default ${1:${TM_FILENAME_BASE}}",
+          "content": "import React from 'react'\nfunction ${1:$TM_FILENAME_BASE}() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactFunctionalExportComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rfce"
         },
         {
-          "content": "import React from 'react'\nexport default function ${1:${TM_FILENAME_BASE}}() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}",
+          "content": "import React from 'react'\nexport default function ${1:$TM_FILENAME_BASE}() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}",
           "name": "reactFunctionalComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rfc"
         },
         {
-          "content": "import React from 'react'\nimport PropTypes from 'prop-types'\n\nfunction ${1:${TM_FILENAME_BASE}(props) {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}\n\n${1:${TM_FILENAME_BASE}.propTypes = {}\n\nexport default ${1:${TM_FILENAME_BASE}",
+          "content": "import React from 'react'\nimport PropTypes from 'prop-types'\n\nfunction ${1:$TM_FILENAME_BASE}(props) {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\n${1:$TM_FILENAME_BASE}.propTypes = {}\n\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactFunctionalComponentWithPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rfcp"
         },
         {
-          "content": "import React from 'react'\nconst ${1:TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}\n\nexport default ${1:TM_FILENAME_BASE}",
+          "content": "import React from 'react'\n\nconst ${1:TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default ${1:TM_FILENAME_BASE}",
           "name": "reactArrowFunctionExportComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rafce"
         },
         {
-          "content": "import React from 'react'\nexport const ${1:$TM_FILENAME_BASE} = () => {\n\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}",
+          "content": "import React from 'react'\n\nexport const ${1:$TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}",
           "name": "reactArrowFunctionComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rafc"
         },
         {
-          "content": "import React from 'react'\nimport PropTypes from 'prop-types'\nconst ${1:$TM_FILENAME_BASE} = props => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}\n${1:$TM_FILENAME_BASE}.propTypes = {}\nexport default ${1:$TM_FILENAME_BASE}",
+          "content": "import React from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1:$TM_FILENAME_BASE} = props => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\n${1:$TM_FILENAME_BASE}.propTypes = {\n\n}\n\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactArrowFunctionComponentWithPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rafcp"
         },
         {
-          "content": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\n\nexport class ${1:$TM_FILENAME_BASE} extends Component {\n\tstatic propTypes = {\t}\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}}\n\nexport default ${1:$TM_FILENAME_BASE}",
+          "content": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\n\nexport class ${1:$TM_FILENAME_BASE} extends Component {\n\tstatic propTypes = {\n\t\n}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactClassExportComponentWithPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rcep"
         },
         {
-          "content": "import React, { PureComponent } from 'react'\nexport default class ${1:$TM_FILENAME_BASE} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}}",
+          "content": "import React, { PureComponent } from 'react'\n\nexport default class ${1:$TM_FILENAME_BASE} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}",
           "name": "reactClassPureComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rpc"
         },
         {
-          "content": "import React, { PureComponent } from 'react'\nexport class ${1:$TM_FILENAME_BASE} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}}\nexport default ${1:$TM_FILENAME_BASE}",
+          "content": "import React, { PureComponent } from 'react'\n\nexport class ${1:$TM_FILENAME_BASE} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactClassExportPureComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rpce"
         },
         {
-          "content": "import React, { PureComponent } from 'react'\nimport PropTypes from 'prop-types'\nexport default class ${1:$TM_FILENAME_BASE} extends PureComponent {\n\tstatic propTypes = {\t}\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}}",
+          "content": "import React, { PureComponent } from 'react'\nimport PropTypes from 'prop-types'\n\nexport default class ${1:$TM_FILENAME_BASE} extends PureComponent {\n\tstatic propTypes = {\n\t\n}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}",
           "name": "reactClassPureComponentWithPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rpcp"
         },
         {
-          "content": "import React, { memo } from 'react'\nexport default memo(function ${1:$TM_FILENAME_BASE}() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n})",
+          "content": "import React, { memo } from 'react'\n\nexport default memo(function ${1:$TM_FILENAME_BASE}() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n})",
           "name": "reactFunctionMemoComponent",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rmc"
         },
         {
-          "content": "import React, { memo } from 'react'\nimport PropTypes from 'prop-types'\nconst ${1:$TM_FILENAME_BASE} = memo(function ${1:$TM_FILENAME_BASE}(props) {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n})\n${1:$TM_FILENAME_BASE}.propTypes = {}\nexport default ${1:$TM_FILENAME_BASE}",
+          "content": "import React, { memo } from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1:$TM_FILENAME_BASE} = memo(function ${1:$TM_FILENAME_BASE}(props) {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n})\n\n${1:$TM_FILENAME_BASE}.propTypes = {\n\n}\n\nexport default ${1:$TM_FILENAME_BASE}",
           "name": "reactFunctionMemoComponentWithPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rmcp"
         },
         {
-          "content": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\nexport default class ${1:$TM_FILENAME_BASE} extends Component {\n\tstatic propTypes = {\n\t\t${2:prop}: ${3:PropTypes}\n\t}\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}}",
+          "content": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\n\nexport default class ${1:$TM_FILENAME_BASE} extends Component {\n\tstatic propTypes = {\n\t\t${2:prop}: ${3:PropTypes}\n\t}\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}",
           "name": "reactClassCompomentPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rccp"
         },
         {
-          "content": "import React, { Component } from 'react'\nimport { connect } from 'react-redux'\nexport class ${1:$TM_FILENAME_BASE} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}}\nconst mapStateToProps = (state) => ({\n\t})\nconst mapDispatchToProps = {\n\t}\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE})",
+          "content": "import React, { Component } from 'react'\nimport { connect } from 'react-redux'\n\nexport class ${1:$TM_FILENAME_BASE} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nconst mapStateToProps = (state) => ({\n\t\n})\n\nconst mapDispatchToProps = {\n\t\n}\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE})",
           "name": "reactClassCompomentRedux",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rcredux"
         },
         {
-          "content": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\nimport { connect } from 'react-redux'\nexport class ${1:$TM_FILENAME_BASE} extends Component {\n\tstatic propTypes = {\n\t\t${2:prop}: ${3:PropTypes}\n\t}\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}}\nconst mapStateToProps = (state) => (\n{\t}\n)\nconst mapDispatchToProps = {\n\t}\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE})",
+          "content": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\nimport { connect } from 'react-redux'\n\nexport class ${1:$TM_FILENAME_BASE} extends Component {\n\tstatic propTypes = {\n\t\t${2:prop}: ${3:PropTypes}\n\t}\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nconst mapStateToProps = (state) => ({\n\t\n})\n\nconst mapDispatchToProps = {\n\t\n}\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE})",
           "name": "reactClassCompomentReduxPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rcreduxp"
         },
         {
-          "content": "import React, { Component } from 'react'\nimport { connect } from 'react-redux'\nexport const ${1:$TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}\nconst mapStateToProps = (state) => ({\n\t\n})\nconst mapDispatchToProps = {\n\t\n}\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE})",
+          "content": "import React, { Component } from 'react'\nimport { connect } from 'react-redux'\n\nexport const ${1:$TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nconst mapStateToProps = (state) => ({\n\t\n})\n\nconst mapDispatchToProps = {\n\t\n}\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE})",
           "name": "reactFunctionalCompomentRedux",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rfcredux"
         },
         {
-          "content": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\nimport { connect } from 'react-redux'\nexport const ${1:$TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)}\n${1:$TM_FILENAME_BASE}.propTypes = {\n\t${2:prop}: ${3:PropTypes}\n}\nconst mapStateToProps = (state) => ({\n\t\n})\nconst mapDispatchToProps = {\n\t\n}\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE})",
+          "content": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\nimport { connect } from 'react-redux'\n\nexport const ${1:$TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\n${1:$TM_FILENAME_BASE}.propTypes = {\n\t${2:prop}: ${3:PropTypes}\n}\n\nconst mapStateToProps = (state) => ({\n\t\n})\n\nconst mapDispatchToProps = {\n\t\n}\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE})",
           "name": "reactFunctionalCompomentReduxPropTypes",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "rfcreduxp"
         },
         {
-          "content": "const mapStateToProps = (state) => ({\n\t${1}\n})\nconst mapDispatchToProps = {\t}",
+          "content": "const mapStateToProps = (state) => ({\n\t${1}\n})\nconst mapDispatchToProps = {\n\t\n}",
           "name": "mappingToProps",
           "scope": "editor",
           "syntax": ["jsx", "javascript"],
           "trigger": "reduxmap"
-        },
-      ],
+        }
+      ]
     }
   ]
 }
