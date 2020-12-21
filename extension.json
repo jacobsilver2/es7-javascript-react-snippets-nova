@@ -3,5 +3,13 @@
   "name": "es7-javascript-react-snippets",
   "description": "ES7 JS React Snippets for Nova, based on the popular plugin for VS Code.",
   "version": "1.0",
-  "categories": ["clips"]
+  "license": "MIT",
+  "categories": ["clips"],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:js",
+    "onLanguage:jsx",
+    "onLanguage:tsx"
+  ]
 }
